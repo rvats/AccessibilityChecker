@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AccessibilityCheckerUtil;
+using System;
 
 namespace AccessibilityCheckerConsole
 {
@@ -6,7 +7,11 @@ namespace AccessibilityCheckerConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Accessibility Checker Console Application");
+            PdfAccessibilityChecker pdfAccessibilityChecker = new PdfAccessibilityChecker();
+            var readPdfText = pdfAccessibilityChecker.ReadData("AccessibilityChecker.pdf");
+            Console.WriteLine(readPdfText);
+            Console.ReadKey();
         }
     }
 }

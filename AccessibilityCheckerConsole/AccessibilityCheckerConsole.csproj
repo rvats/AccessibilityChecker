@@ -5,4 +5,14 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="..\_Resources\AccessibilityChecker.pdf" Link="AccessibilityChecker.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AccessibilityCheckerUtil\AccessibilityCheckerUtil.csproj" />
+  </ItemGroup>
+
 </Project>
